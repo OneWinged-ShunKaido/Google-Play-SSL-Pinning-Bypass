@@ -14,17 +14,19 @@ We can very roughly summarize the use of these services as follows:
 ### gps (Google Play Services) → com.android.vending
 Used for Google Play (e.g., Play Store browsing) services traffic generation and other Play Integrity communication, including:
 
-[PI] Attestation Request (DroidGuard result ↔ Google backend)
+- [PI] Attestation Request (DroidGuard result ↔ Google backend)
 
 
 ### gms (Google Mobile Services) → com.google.android.gms
 Used for VM/bytecode requests for both SafetyNet and Play Integrity, and involved in basic SafetyNet communication:
 
-[SN] VM & Bytecode Request
+- [PI] VM & Bytecode Request
 
-[SN] Attestation Request (DroidGuard result <-> Google backend)
+- [SN] VM & Bytecode Request
 
-[SN] VM & Bytecode Request
+- [SN] Attestation Request (DroidGuard result <-> Google backend)
+
+
 
 
 
