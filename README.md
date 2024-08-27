@@ -7,7 +7,7 @@ This repository includes multiple scripts, particularly ***gms_ssl_pinning.js***
 Both scripts are linked to and used for Android HTTP(S) communication, sometimes relying on Cronet
 
 
-We can very roughly summarize the use of these services as follows:
+We can *very roughly* summarize the use of these services as follows:
 
 
 
