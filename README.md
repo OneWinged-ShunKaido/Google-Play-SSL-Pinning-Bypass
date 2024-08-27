@@ -1,26 +1,19 @@
 # Google-Play-SSL-Pinning-Bypass
+Bypass Cronet Google Play SSL pinning on Android with Frida.
 
-Bypass Cronet Google Play SSL pinning on Android with Frida
+This repository includes multiple scripts, particularly gms_ssl_pinning.js and gps_ssl_pinning.js.
 
-This Repo includes multiple scripts, especially **gms**_ssl_pinning.js & **gps**_ssl_pinning.js
+Both scripts are linked to and used for Android HTTP(S) communication, sometimes relying on Cronet. The deeper we dive into Google's services, the more exciting the journey becomes 😊. We can very roughly summarize the use of these services as follows:
 
-Both are linked & used for Android http(s) communication and sometimes relies on Cronet. The deeper we dive into Google's services, the more exciting the journey becomes 😊
-Thus we can *very roughly* sum up the use of these services as follows:
+gps → com.android.vending
+gms → com.google.android.gms
+gps (Google Play Services)
+Used for Google Play (e.g., Play Store browsing) services traffic generation and other Play Integrity communication, including:
 
+[PI] Attestation Request (DroidGuard result ↔ Google backend)
+gms (Google Mobile Services)
+Used for VM/bytecode requests for both SafetyNet and Play Integrity, and involved in basic SafetyNet communication:
 
-**gps** -> **com.android.vending**
-**gms** -> **com.google.android.gms**
-
-
-
-gps is used for Google Play (e.g. Play Store browsing) services traffic generation and whatnot Play Integrity communication: 
-[PI] Attestation Request (DroidGuard result <-> Google backend)
-
-gms is used for VM/bytecode request for both SafetyNet and Play Integrity. Also involved in basic SN communication:
-
-[SN] VM & ByteCode Request
-[SN] Attestation Request (DroidGuard result <-> Google backend)
-[PI] VM & ByteCode Request
-
-
-
+[SN] VM & Bytecode Request
+[SN] Attestation Request (DroidGuard result ↔ Google backend)
+[SN] VM & Bytecode Request
