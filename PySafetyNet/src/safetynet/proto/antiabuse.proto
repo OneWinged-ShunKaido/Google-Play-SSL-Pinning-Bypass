@@ -1,0 +1,22 @@
+// proto/antiabuse.proto
+// This is the result of my own perception of safetynet, so some elements may be inaccurate...
+
+syntax = "proto2";
+
+message VmInfo {
+    // Define any potential fields here, but they can be optional and left empty
+    optional bytes vmUrl = 1;
+}
+
+message PayloadData {
+    optional bytes bytecode = 1;
+    optional string vmUrl = 2;  // This submessage can be empty considering they removed it
+    optional bytes vmChecksum = 3;
+    optional int32 expiryTimeSecs = 4;
+    optional bytes signature = 9;
+}
+
+message AntiAbuseResponse {
+    optional PayloadData payload = 1;
+    optional bytes unknownField = 2;  // Placeholder for the field with no specified type/name
+}
