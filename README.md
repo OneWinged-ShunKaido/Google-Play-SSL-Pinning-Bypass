@@ -31,7 +31,7 @@ This will help in reversing the DroidGuard VM and what not keep it up to date.
 
 
 TODO: Finish Reversing DroidGuard
-Add a Python <-> bridge to avoid recompiling the app everytime and trace custom bytecode 
+TODO:  Add a Python <-> Java bridge to avoid recompiling the app everytime and trace custom bytecode 
 
 
 
