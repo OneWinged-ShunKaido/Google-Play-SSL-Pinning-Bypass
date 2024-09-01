@@ -26,6 +26,16 @@ Used for VM/bytecode requests for both SafetyNet and Play Integrity, and involve
 
 - [SN] Attestation Request (DroidGuard result <-> Google backend)
 
+You will also find a mitm script to capture safetynet/play integrity traffic.
+This will help in reversing the DroidGuard VM and what not keep it up to date.
+
+
+TODO: Finish Reversing DroidGuard
+Add a Python <-> bridge to avoid recompiling the app everytime and trace custom bytecode 
+
+
+
+
 
 
 
