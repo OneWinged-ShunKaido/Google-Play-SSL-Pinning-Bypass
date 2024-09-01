@@ -16,7 +16,7 @@ logger = logging.getLogger()
 class SafetyNetBypass(ProtoDecoder):
     safetynet_host = "www.googleapis.com"
     play_integrity_host = ""
-    android_check_api = "androidcheck/v1/attestations"
+    android_check_api = "androidcheck/v1/attestations/attest"
     anti_abuse_api = "androidantiabuse/v1/x"
     integrity_api = ""
     action_allowed_hosts = [safetynet_host, play_integrity_host]
